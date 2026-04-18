@@ -2,7 +2,7 @@
 
 A premium, responsive single-page website for **The Lighthouse**, an upscale fine-dining restaurant. This project features a sophisticated dark-themed aesthetic, parallax scrolling effects, and a dynamic menu system designed to provide an elegant user experience for high-end culinary brands.
 
-    🏆 This repository is part of the Open Source 101 organised by ISTE HIT SC
+    🏆 This repository is part of GSSOC2'26 
 ---
 
 ## 🍽️ Features
