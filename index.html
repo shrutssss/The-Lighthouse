@@ -151,10 +151,22 @@
           </div>
         </div>
 
+        <!-- Veg / Non-Veg Filter Toggle -->
+        <div class="diet-filter" id="dietFilter">
+          <button class="diet-btn active" data-diet="all">All Items</button>
+          <button class="diet-btn veg" data-diet="veg">
+            <span class="diet-dot veg-dot"></span> Veg
+          </button>
+          <button class="diet-btn non-veg" data-diet="non-veg">
+            <span class="diet-dot non-veg-dot"></span> Non-Veg
+          </button>
+        </div>
+
         <!-- Menu Content -->
-        <div class="menu-content">
+        <div class="menu-content menu-panel active">
+          <div class="menu-items">
           <!-- breakfast -->
-          <div class="menu-item" data-category="breakfast">
+          <div class="menu-item" data-category="breakfast" data-diet="veg">
             <div class="food-card">
               <img
                 src="./images/MasalaDosa.jpg"
@@ -175,7 +187,7 @@
               </div>
             </div>
           </div>
-          <div class="menu-item" data-category="breakfast">
+          <div class="menu-item" data-category="breakfast" data-diet="veg">
             <div class="food-card">
               <img
                 src="./images/Idli_Sambar.jpg"
@@ -199,7 +211,7 @@
             </div>
           </div>
 
-          <div class="menu-item" data-category="breakfast">
+          <div class="menu-item" data-category="breakfast" data-diet="non-veg">
             <div class="food-card">
               <img
                 src="./images/Chicken_Keema_Dosa.jpg"
@@ -222,7 +234,7 @@
           </div>
 
           <!-- lunch -->
-          <div class="menu-item" data-category="lunch">
+          <div class="menu-item" data-category="lunch" data-diet="veg">
             <div class="food-card">
               <img
                 src="./images/Paneer_Butter_Masala.jpg"
@@ -245,7 +257,7 @@
           </div>
 
           <!-- dinner -->
-          <div class="menu-item" data-category="dinner">
+          <div class="menu-item" data-category="dinner" data-diet="non-veg">
             <div class="food-card">
               <img
                 src="./images/Hyderabadi_Chicken_Biryani.jpg"
@@ -270,7 +282,7 @@
             </div>
           </div>
 
-          <div class="menu-item" data-category="dinner">
+          <div class="menu-item" data-category="dinner" data-diet="non-veg">
             <div class="food-card">
               <img
                 src="./images/Butter_Chicken.jpg"
@@ -293,7 +305,7 @@
           </div>
 
           <!-- Drinks -->
-          <div class="menu-item" data-category="drinks">
+          <div class="menu-item" data-category="drinks" data-diet="veg">
             <div class="food-card">
               <img
                 src="./images/Mango_Lassi.jpg"
@@ -316,7 +328,7 @@
               </div>
             </div>
           </div>
-          <div class="menu-item" data-category="drinks">
+          <div class="menu-item" data-category="drinks" data-diet="veg">
             <div class="food-card">
               <img
                 src="./images/Masala_Chai.jpg"
@@ -339,7 +351,7 @@
               </div>
             </div>
           </div>
-          <div class="menu-item" data-category="drinks">
+          <div class="menu-item" data-category="drinks" data-diet="veg">
             <div class="food-card">
               <img
                 src="./images/Fresh_Lime_Soda.jpg"
@@ -361,7 +373,7 @@
             </div>
           </div>
           <!-- Desserts -->
-          <div class="menu-item" data-category="desserts">
+          <div class="menu-item" data-category="desserts" data-diet="veg">
             <div class="food-card">
               <img
                 src="./images/Gulab_Jamun.jpg"
@@ -382,7 +394,7 @@
               </div>
             </div>
           </div>
-          <div class="menu-item" data-category="desserts">
+          <div class="menu-item" data-category="desserts" data-diet="veg">
             <div class="food-card">
               <img
                 src="./images/Rasmalai.jpg"
@@ -403,7 +415,7 @@
               </div>
             </div>
           </div>
-          <div class="menu-item" data-category="desserts">
+          <div class="menu-item" data-category="desserts" data-diet="veg">
             <div class="food-card">
               <img src="./images/Kulfi.jpg" alt="Kulfi" class="food-image" loading="lazy"/>
 
@@ -421,6 +433,7 @@
                 </p>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
