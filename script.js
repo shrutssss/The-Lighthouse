@@ -221,7 +221,46 @@ function handleFormSubmit(e) {
       input.style.borderColor = '';
     }
   });
+  const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
 
+// Remove old error messages if already present
+document.querySelectorAll('.error-message').forEach(el => el.remove());
+
+// Email validation
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (emailInput && !emailRegex.test(emailInput.value.trim())) {
+  emailInput.style.borderColor = '#c94a4a';
+
+  const emailError = document.createElement('small');
+  emailError.className = 'error-message';
+  emailError.style.color = '#c94a4a';
+  emailError.textContent = 'Please enter a valid email address.';
+
+  emailInput.parentElement.appendChild(emailError);
+
+  isValid = false;
+}
+
+// Phone validation
+if (phoneInput) {
+  const phoneValue = phoneInput.value.replace(/\D/g, '');
+
+  if (phoneValue.length !== 10) {
+    phoneInput.style.borderColor = '#c94a4a';
+
+    const phoneError = document.createElement('small');
+    phoneError.className = 'error-message';
+    phoneError.style.color = '#c94a4a';
+    phoneError.textContent = 'Phone number must contain exactly 10 digits.';
+
+    phoneInput.parentElement.appendChild(phoneError);
+
+    isValid = false;
+  }
+}
+  
   if (isValid) {
     const submitBtn  = reservationForm.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
